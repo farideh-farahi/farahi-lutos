@@ -1,0 +1,49 @@
+/* ... (باقی کدهای CSS) ... */  
+
+/* استایل فرم */  
+.form-container {  
+    background-color: white; /* رنگ پس‌زمینه فرم */  
+    padding: 2rem; /* فضای داخلی فرم */  
+    border-radius: 10px; /* گوشه‌های گرد */  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* سایه نرم */  
+    max-width: 600px; /* حداکثر عرض */  
+    margin: 2rem auto; /* مرکز چین */  
+}  
+
+.form-group {  
+    margin-bottom: 1.5rem; /* فاصله بین فیلدها */  
+}  
+
+label {  
+    display: block; /* نمایش لیبل به صورت بلوکی */  
+    margin-bottom: 0.5rem; /* فاصله زیر لیبل */  
+    font-weight: bold; /* پررنگ */  
+}  
+
+.form-input {  
+    width: 100%; /* عرض کامل */  
+    padding: 0.5rem; /* فضای داخلی */  
+    border: 1px solid #ccc; /* رنگ حاشیه */  
+    border-radius: 5px; /* گوشه‌های گرد */  
+    font-size: 1rem; /* اندازه فونت */  
+}  
+
+.form-input:focus {  
+    border-color: #659fdf; /* رنگ حاشیه هنگام تمرکز */  
+    outline: none; /* حذف خط تمرکز پیش‌فرض */  
+}  
+
+.submit-btn {  
+    background-color: #659fdf; /* رنگ دکمه */  
+    color: white; /* رنگ متن دکمه */  
+    border: none; /* بدون حاشیه */  
+    padding: 0.75rem; /* فضای داخلی */  
+    border-radius: 5px; /* گوشه‌های گرد */  
+    font-size: 1rem; /* اندازه فونت */  
+    cursor: pointer; /* نشانگر کابر */  
+    transition: background-color 0.3s; /* انیمیشن تغییر رنگ دکمه */  
+}  
+
+.submit-btn:hover {  
+    background-color: #5a8bd6; /* رنگ دکمه هنگام hover */  
+}

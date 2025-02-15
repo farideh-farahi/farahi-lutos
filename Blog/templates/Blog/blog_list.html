@@ -1,0 +1,24 @@
+<!-- blog/blog_list.html -->
+{% extends 'master.html' %}
+
+{% block title %}
+    Blog Posts
+{% endblock %}
+
+{% block content %}
+<h2>Blog Posts</h2>
+<a href="{% url 'create_new_post' %}" class="btn btn-primary">Create New Post</a>
+
+<div class="blog-posts">
+    {% for blog in blogs %}
+        <div class="blog-post">
+            <h3>{{ blog.title }}</h3> <!-- نمایش عنوان بلاگ -->
+            <p>{{ blog.text|truncatewords:50 }}</p> <!-- نمایش متن (با محدودیت کلمات) -->
+            <a href="{% url 'blog' blog.id %}">Read more</a> <!-- لینک به جزئیات پست -->
+        </div>
+    {% empty %}
+        <p>No blog posts available.</p> <!-- نمایش پیغامی در صورت عدم وجود پست -->
+    {% endfor %}
+</div>
+
+{% endblock %}

@@ -1,0 +1,36 @@
+{% load static %}  
+<!DOCTYPE html>  
+<html lang="uk">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">  <!-- بارگذاری CSS -->  
+    <title>{% block title %}Blog{% endblock %}</title>  
+</head>  
+
+<body>  
+    <header>  
+        <nav>  
+            <div class="container">  
+                <h1 class="logo">my weblog</h1>  
+                <ul class="nav-links">
+                    <li><a href="{% url 'login' %}">Login</a></li>
+                    <li><a href="{% url 'home_page' %}">Home Page</a></li>  
+                    <li><a href="{% url 'blog_list' %}">posts</a></li>  
+                </ul>  
+            </div>  
+        </nav>  
+    </header>  
+
+    <main>  
+        {% block content %}  
+        {% endblock %}  
+    </main>  
+
+    <footer>  
+        <div class="container">  
+            <p>&copy; 2025 My Weblog. All rights reserved.</p>  
+        </div>  
+    </footer>  
+</body>  
+</html>
