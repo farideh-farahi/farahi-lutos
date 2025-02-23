@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        function getObject (first_name, last_name, age){
+            this.first_name = first_name;
+            this.last_name = last_name;
+            this.age = age;
+        };
+
+        const person_number_one = new getObject("farideh","farahi", 24);
+        console.log(person_number_one.first_name,person_number_one.last_name);
+
+        person_number_one.age = 30;
+
+        console.log(person_number_one);
+         
+
+    </script>
+</body>
+</html>
